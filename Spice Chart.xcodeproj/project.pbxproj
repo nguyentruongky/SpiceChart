@@ -14,6 +14,8 @@
 		4153254F2251243A00D195F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4153254D2251243A00D195F2 /* LaunchScreen.storyboard */; };
 		4153255A2251243A00D195F2 /* Spice_ChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415325592251243A00D195F2 /* Spice_ChartTests.swift */; };
 		415325652251243B00D195F2 /* Spice_ChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415325642251243B00D195F2 /* Spice_ChartUITests.swift */; };
+		4153257322513B6500D195F2 /* ElementEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153257222513B6500D195F2 /* ElementEditor.swift */; };
+		4153257522513B9000D195F2 /* ElementEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4153257422513B9000D195F2 /* ElementEditor.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		415325602251243B00D195F2 /* Spice ChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spice ChartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415325642251243B00D195F2 /* Spice_ChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spice_ChartUITests.swift; sourceTree = "<group>"; };
 		415325662251243B00D195F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4153257222513B6500D195F2 /* ElementEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementEditor.swift; sourceTree = "<group>"; };
+		4153257422513B9000D195F2 /* ElementEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementEditor.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				4153254B2251243A00D195F2 /* Assets.xcassets */,
 				4153254D2251243A00D195F2 /* LaunchScreen.storyboard */,
 				415325502251243A00D195F2 /* Info.plist */,
+				4153257222513B6500D195F2 /* ElementEditor.swift */,
+				4153257422513B9000D195F2 /* ElementEditor.xib */,
 			);
 			path = "Spice Chart";
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				4153254F2251243A00D195F2 /* LaunchScreen.storyboard in Resources */,
 				4153254C2251243A00D195F2 /* Assets.xcassets in Resources */,
 				4153254A2251243700D195F2 /* Main.storyboard in Resources */,
+				4153257522513B9000D195F2 /* ElementEditor.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4153257322513B6500D195F2 /* ElementEditor.swift in Sources */,
 				415325472251243700D195F2 /* ViewController.swift in Sources */,
 				415325452251243700D195F2 /* AppDelegate.swift in Sources */,
 			);
