@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Spice_Chart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08X-Xp-gjJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eE5-dA-sCx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="820"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKr-55-zkx" userLabel="Header">
+                                                <rect key="frame" x="0.0" y="20" width="375" height="72"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPICE CHART" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJf-cr-0FL">
+                                                        <rect key="frame" x="119" y="23" width="137" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-D9-QQ2">
+                                                        <rect key="frame" x="31" y="0.0" width="72" height="72"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vEo-m9-IH0">
+                                                        <rect key="frame" x="272" y="0.0" width="72" height="72"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="vEo-m9-IH0" secondAttribute="height" multiplier="1:1" id="LwB-wB-oXy"/>
+                                                            <constraint firstAttribute="width" constant="72" id="dF8-jV-r8S"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="1KY-D9-QQ2" firstAttribute="width" secondItem="vEo-m9-IH0" secondAttribute="width" id="9MF-3v-Mgo"/>
+                                                    <constraint firstItem="vEo-m9-IH0" firstAttribute="top" secondItem="RKr-55-zkx" secondAttribute="top" id="FAU-Sb-BNB"/>
+                                                    <constraint firstItem="vEo-m9-IH0" firstAttribute="leading" secondItem="MJf-cr-0FL" secondAttribute="trailing" priority="999" constant="16" id="G0Q-ui-XxH"/>
+                                                    <constraint firstItem="1KY-D9-QQ2" firstAttribute="height" secondItem="vEo-m9-IH0" secondAttribute="height" id="Htq-I9-fik"/>
+                                                    <constraint firstItem="MJf-cr-0FL" firstAttribute="centerX" secondItem="RKr-55-zkx" secondAttribute="centerX" id="Q4O-4A-rZe"/>
+                                                    <constraint firstItem="MJf-cr-0FL" firstAttribute="centerY" secondItem="RKr-55-zkx" secondAttribute="centerY" id="RAa-Kv-WW8"/>
+                                                    <constraint firstItem="1KY-D9-QQ2" firstAttribute="centerY" secondItem="vEo-m9-IH0" secondAttribute="centerY" id="mxR-Jt-ua9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vEo-m9-IH0" secondAttribute="bottom" id="q00-pu-LpM"/>
+                                                    <constraint firstItem="MJf-cr-0FL" firstAttribute="leading" secondItem="1KY-D9-QQ2" secondAttribute="trailing" constant="16" id="tDx-P9-OIO"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="sJw-GX-yDT" userLabel="Detail">
+                                                <rect key="frame" x="16" y="116" width="343" height="240"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CPJ-bt-t7Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="64"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sk-FO-T2u" userLabel="ButterView" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDF-iA-X9K">
+                                                                        <rect key="frame" x="63" y="24" width="37.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="vDF-iA-X9K" firstAttribute="centerX" secondItem="3Sk-FO-T2u" secondAttribute="centerX" id="B4B-WP-Nxg"/>
+                                                                    <constraint firstItem="vDF-iA-X9K" firstAttribute="centerY" secondItem="3Sk-FO-T2u" secondAttribute="centerY" id="e2f-S5-JpZ"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xp-EP-0TU" userLabel="Coconut" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
+                                                                <rect key="frame" x="179.5" y="0.0" width="163.5" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coconut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCh-Jz-C6g">
+                                                                        <rect key="frame" x="56" y="24" width="51.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="mCh-Jz-C6g" firstAttribute="centerX" secondItem="8xp-EP-0TU" secondAttribute="centerX" id="DcY-Rk-cYq"/>
+                                                                    <constraint firstItem="mCh-Jz-C6g" firstAttribute="centerY" secondItem="8xp-EP-0TU" secondAttribute="centerY" id="eLY-Hp-KuB"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-YQ-hqB">
+                                                        <rect key="frame" x="0.0" y="88" width="343" height="64"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D00-0k-gkA" userLabel="Extra virgin olive" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra virgin olive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfF-d7-sOv">
+                                                                        <rect key="frame" x="32" y="24" width="99.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="XfF-d7-sOv" firstAttribute="centerY" secondItem="D00-0k-gkA" secondAttribute="centerY" id="CSc-MP-idj"/>
+                                                                    <constraint firstItem="XfF-d7-sOv" firstAttribute="centerX" secondItem="D00-0k-gkA" secondAttribute="centerX" id="iza-a0-N9I"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YD3-EE-mw8" userLabel="Avocado" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
+                                                                <rect key="frame" x="179.5" y="0.0" width="163.5" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avocado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPE-pP-zym">
+                                                                        <rect key="frame" x="56" y="24" width="52" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="wPE-pP-zym" firstAttribute="centerY" secondItem="YD3-EE-mw8" secondAttribute="centerY" id="YWw-B7-3nR"/>
+                                                                    <constraint firstItem="wPE-pP-zym" firstAttribute="centerX" secondItem="YD3-EE-mw8" secondAttribute="centerX" id="bOj-qY-TDV"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-sT-Bya">
+                                                        <rect key="frame" x="0.0" y="176" width="343" height="64"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2t-ma-N5c" userLabel="Walnut" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walnut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-XU-sdx">
+                                                                        <rect key="frame" x="61" y="24" width="42" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="xDh-XU-sdx" firstAttribute="centerX" secondItem="e2t-ma-N5c" secondAttribute="centerX" id="41f-5Y-B1f"/>
+                                                                    <constraint firstItem="xDh-XU-sdx" firstAttribute="centerY" secondItem="e2t-ma-N5c" secondAttribute="centerY" id="7CK-Kk-qSi"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTw-Kp-VwR" userLabel="Grapeseed" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
+                                                                <rect key="frame" x="179.5" y="0.0" width="163.5" height="64"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grapeseed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TR-hM-vWq">
+                                                                        <rect key="frame" x="48.5" y="24" width="66.5" height="16"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="0TR-hM-vWq" firstAttribute="centerX" secondItem="kTw-Kp-VwR" secondAttribute="centerX" id="oGM-vQ-rt8"/>
+                                                                    <constraint firstItem="0TR-hM-vWq" firstAttribute="centerY" secondItem="kTw-Kp-VwR" secondAttribute="centerY" id="pMG-j4-ArP"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="240" id="iQb-1b-yfu"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-YZ-s8N" userLabel="Element">
+                                                <rect key="frame" x="16" y="404" width="343" height="400"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-JA-TUH" userLabel="Butter Picker" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butter picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f28-U4-DIx">
+                                                                <rect key="frame" x="132.5" y="36" width="78.5" height="16"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="f28-U4-DIx" firstAttribute="centerY" secondItem="Btb-JA-TUH" secondAttribute="centerY" id="PkH-wI-acC"/>
+                                                            <constraint firstItem="f28-U4-DIx" firstAttribute="centerX" secondItem="Btb-JA-TUH" secondAttribute="centerX" id="e3H-Wj-YSZ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO4-c1-BZb" userLabel="Spices Picker" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="104" width="343" height="88"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spices Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpW-1i-GkA">
+                                                                <rect key="frame" x="131" y="36" width="81.5" height="16"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="IpW-1i-GkA" firstAttribute="centerX" secondItem="GO4-c1-BZb" secondAttribute="centerX" id="EEp-Af-kEi"/>
+                                                            <constraint firstItem="IpW-1i-GkA" firstAttribute="centerY" secondItem="GO4-c1-BZb" secondAttribute="centerY" id="Rn2-Zy-cJ4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-fy-Sb7" userLabel="Spices Percent" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="208" width="343" height="88"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spices Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-K3-uoo">
+                                                                <rect key="frame" x="126" y="36" width="91" height="16"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="cMN-K3-uoo" firstAttribute="centerY" secondItem="cJe-fy-Sb7" secondAttribute="centerY" id="66r-W2-vcv"/>
+                                                            <constraint firstItem="cMN-K3-uoo" firstAttribute="centerX" secondItem="cJe-fy-Sb7" secondAttribute="centerX" id="fWh-1a-uOf"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-zK-sQa" userLabel="Number Of Serving" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="312" width="343" height="88"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of serving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-5b-MPd">
+                                                                <rect key="frame" x="115.5" y="36" width="112.5" height="16"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="X9b-5b-MPd" firstAttribute="centerX" secondItem="BWm-zK-sQa" secondAttribute="centerX" id="BZK-Tj-BoE"/>
+                                                            <constraint firstItem="X9b-5b-MPd" firstAttribute="centerY" secondItem="BWm-zK-sQa" secondAttribute="centerY" id="t67-WI-L33"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="400" id="95Y-kG-027"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="t2I-YZ-s8N" firstAttribute="trailing" secondItem="sJw-GX-yDT" secondAttribute="trailing" id="0UW-Ky-vZS"/>
+                                            <constraint firstItem="RKr-55-zkx" firstAttribute="leading" secondItem="eE5-dA-sCx" secondAttribute="leading" id="5lB-Nm-LQp"/>
+                                            <constraint firstAttribute="bottom" secondItem="t2I-YZ-s8N" secondAttribute="bottom" constant="16" id="GxT-Rt-h4f"/>
+                                            <constraint firstItem="RKr-55-zkx" firstAttribute="top" secondItem="eE5-dA-sCx" secondAttribute="top" constant="20" id="c5L-49-D70"/>
+                                            <constraint firstAttribute="trailing" secondItem="sJw-GX-yDT" secondAttribute="trailing" constant="16" id="ckg-9H-aCY"/>
+                                            <constraint firstItem="sJw-GX-yDT" firstAttribute="top" secondItem="RKr-55-zkx" secondAttribute="bottom" constant="24" id="eqY-xd-qw3"/>
+                                            <constraint firstItem="t2I-YZ-s8N" firstAttribute="leading" secondItem="sJw-GX-yDT" secondAttribute="leading" id="iSX-aw-7En"/>
+                                            <constraint firstItem="sJw-GX-yDT" firstAttribute="leading" secondItem="eE5-dA-sCx" secondAttribute="leading" constant="16" id="sbJ-yx-3T6"/>
+                                            <constraint firstAttribute="trailing" secondItem="RKr-55-zkx" secondAttribute="trailing" id="tww-O7-CW0"/>
+                                            <constraint firstItem="t2I-YZ-s8N" firstAttribute="top" secondItem="sJw-GX-yDT" secondAttribute="bottom" constant="48" id="wmH-OU-6gR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eE5-dA-sCx" secondAttribute="bottom" id="3mn-hK-v1a"/>
+                                    <constraint firstItem="eE5-dA-sCx" firstAttribute="centerX" secondItem="08X-Xp-gjJ" secondAttribute="centerX" id="JV4-sS-fVW"/>
+                                    <constraint firstAttribute="trailing" secondItem="eE5-dA-sCx" secondAttribute="trailing" id="N5C-W4-mpY"/>
+                                    <constraint firstItem="eE5-dA-sCx" firstAttribute="leading" secondItem="08X-Xp-gjJ" secondAttribute="leading" id="aD3-f1-sen"/>
+                                    <constraint firstItem="eE5-dA-sCx" firstAttribute="top" secondItem="08X-Xp-gjJ" secondAttribute="top" id="omf-gI-mOr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="08X-Xp-gjJ" secondAttribute="trailing" id="2no-Eh-qpB"/>
+                            <constraint firstAttribute="bottom" secondItem="08X-Xp-gjJ" secondAttribute="bottom" id="Fwb-Rz-jfI"/>
+                            <constraint firstItem="08X-Xp-gjJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PSb-XJ-iXR"/>
+                            <constraint firstItem="08X-Xp-gjJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XBW-cY-H8F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="avocadoView" destination="YD3-EE-mw8" id="vfn-aP-99Z"/>
+                        <outlet property="butterPicker" destination="Btb-JA-TUH" id="5Z3-lV-z4q"/>
+                        <outlet property="butterView" destination="3Sk-FO-T2u" id="ST0-hj-1rP"/>
+                        <outlet property="coconutView" destination="8xp-EP-0TU" id="HZs-eH-ndJ"/>
+                        <outlet property="grapeseedView" destination="kTw-Kp-VwR" id="k6p-du-YLA"/>
+                        <outlet property="numberOfServing" destination="BWm-zK-sQa" id="jR1-EC-NU4"/>
+                        <outlet property="oliveView" destination="D00-0k-gkA" id="R9Y-3c-1Ya"/>
+                        <outlet property="spicesPercent" destination="cJe-fy-Sb7" id="6u3-fc-PFj"/>
+                        <outlet property="spicesPicker" destination="GO4-c1-BZb" id="Cuc-XB-tTq"/>
+                        <outlet property="walnetView" destination="e2t-ma-N5c" id="dFP-23-VsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
