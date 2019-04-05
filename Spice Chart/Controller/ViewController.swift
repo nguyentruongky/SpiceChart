@@ -21,12 +21,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var spicesPercent: ElementEditor!
     @IBOutlet weak var numberOfServing: ElementEditor!
 
+    var butterCalculator: ButterCalculator!
+
     var butterHandler: ButterPickerHandler!
     var unitHandler: UnitPickerHandler!
     var spicesPercentHandler: SpicesPercentageHandler!
     var servingNumberHandler: ServingNumberHandler!
 
     func setupView() {
+        butterCalculator = ButterCalculator(cupView: butterPicker,
+                                            gramView: spicesPicker,
+                                            percentView: spicesPercent,
+                                            numberServingView: numberOfServing)
+
         butterHandler = ButterPickerHandler(editor: butterPicker)
         unitHandler = UnitPickerHandler(editor: spicesPicker)
         spicesPercentHandler = SpicesPercentageHandler(editor: spicesPercent)
@@ -59,15 +66,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupView()
 
-        NotificationCenter.default.addObserver(self, selector: #selector(gramsChange), name: NSNotification.Name(rawValue: "gram"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(cupsChange), name: NSNotification.Name(rawValue: "cups"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(valueChange), name: NSNotification.Name(rawValue: "valueChange"), object: nil)
     }
 
-    @objc func gramsChange(value: Double) {
-
-    }
-
-    @objc func cupsChange(value: Double) {
-
+    @objc func valueChange(value: Double) {
+        butterView.totalValueLabel.text = butterCalculator.getTotal()
+        butterView.servingValueLabel.text = butterCalculator.getMgServing()
     }
 }

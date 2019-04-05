@@ -33,6 +33,8 @@ class ElementEditor: View {
             } else {
                 stepper.value = value
             }
+
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "valueChange"), object: nil)
         }
     }
 

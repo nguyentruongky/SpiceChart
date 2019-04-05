@@ -64,15 +64,6 @@ class ButterPickerHandler: NSObject, EditorDelegate {
 
         return convertedValue
     }
-
-    func calculateFormula(spiceCount: Double,
-                           spicePercent: Double,
-                           servingCount: Double) -> (totalMg: Double, mgServing: Double) {
-        let spiceValue = spiceCount * spicePercent * 1000
-        let total = spiceValue * 0.93
-        let mgPerServing = servingCount / total
-        return (total, mgPerServing)
-    }
 }
 
 

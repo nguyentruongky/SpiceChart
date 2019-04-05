@@ -55,8 +55,23 @@ extension Float {
         let string = String(self)
         let components = string.split(separator: ".")
         if components.count > 1 {
-            let decimal = String(components[1])
+            let decimal = String(components[1]).prefix(2)
             let value = String(components[0]) + "." + decimal
+            print("Origin: \(string)\nFormatted: \(value)")
+            return value
+        }
+        print("Origin: \(string)\nFormatted: \(string)")
+        return string
+    }
+}
+
+extension Double {
+    func formatNumber() -> String {
+        let string = String(self)
+        let components = string.split(separator: ".")
+        if components.count > 1 {
+            let decimal = String(components[1]).prefix(2)
+            let value = String(components[0]) + "." + String(decimal)
             print("Origin: \(string)\nFormatted: \(value)")
             return value
         }

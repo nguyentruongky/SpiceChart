@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262D72C52255E9CC00AF0EF9 /* ButterCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D72C42255E9CC00AF0EF9 /* ButterCalculator.swift */; };
 		266AC5532252035300FCEE5A /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266AC5522252035300FCEE5A /* DetailView.xib */; };
 		266AC555225203D200FCEE5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC554225203D200FCEE5A /* DetailView.swift */; };
 		266AC55B2252189D00FCEE5A /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC55A2252189D00FCEE5A /* knConstraints.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		262D72C42255E9CC00AF0EF9 /* ButterCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCalculator.swift; sourceTree = "<group>"; };
 		266AC5522252035300FCEE5A /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		266AC554225203D200FCEE5A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		266AC55A2252189D00FCEE5A /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262D72C32255E9BF00AF0EF9 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				262D72C42255E9CC00AF0EF9 /* ButterCalculator.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		266AC55622520F3700FCEE5A /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +192,7 @@
 		415325432251243700D195F2 /* Spice Chart */ = {
 			isa = PBXGroup;
 			children = (
+				262D72C32255E9BF00AF0EF9 /* Calculator */,
 				266AC5652252C0E000FCEE5A /* Views */,
 				266AC5642252C0CF00FCEE5A /* LogicHandler */,
 				266AC5632252C0C000FCEE5A /* Controller */,
@@ -348,6 +359,7 @@
 				266AC55F2252B71700FCEE5A /* ButterPickerHandler.swift in Sources */,
 				266AC5672252C0EC00FCEE5A /* UnitPickerHandler.swift in Sources */,
 				4153257322513B6500D195F2 /* ElementEditor.swift in Sources */,
+				262D72C52255E9CC00AF0EF9 /* ButterCalculator.swift in Sources */,
 				415325472251243700D195F2 /* ViewController.swift in Sources */,
 				266AC55D22521CA700FCEE5A /* PickerWrapper.swift in Sources */,
 				266AC5612252BBB200FCEE5A /* Support.swift in Sources */,
