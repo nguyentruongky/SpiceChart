@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ElementEditor: View {
+class EditorView: View {
     @IBOutlet weak var unitButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet var valueLabel: UILabel!
@@ -97,14 +97,14 @@ class ElementEditor: View {
         value = delegate.convertValue(value: value, selectedItem: item)
 
         
-        valueLabel.text = "\(value)"
+        valueLabel.text = "\(value.formatNumber())"
         slider.value = Float(value)
         stepper.value = value
     }
 }
 
 // MARK: Picker
-extension ElementEditor {
+extension EditorView {
     @objc func showPicker() {
         guard let view = UIApplication.topViewController()?.view else { return }
         view.addSubview(pickerWrapper)
@@ -115,7 +115,7 @@ extension ElementEditor {
 
 
 // MARK: Slider
-extension ElementEditor {
+extension EditorView {
     @objc func sliderChange(sender: UISlider) {
         let step = Float(self.step)
         var roundedValue = round(sender.value / step) * step
@@ -132,7 +132,7 @@ extension ElementEditor {
 
 
 // MARK: Stepper
-extension ElementEditor {
+extension EditorView {
     func setStepper() {
         stepper.minimumValue = valueMin
         stepper.maximumValue = valueMax

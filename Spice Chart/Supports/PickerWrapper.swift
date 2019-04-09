@@ -13,7 +13,7 @@ class PickerWrapper: View, UIPickerViewDelegate, UIPickerViewDataSource {
         pickerView.selectRow(0, inComponent: 0, animated: false)
     }}
     let pickerView = UIPickerView()
-    weak var owner: ElementEditor?
+    weak var owner: EditorView?
 
     override func setupView() {
         func makeButton(title: String) -> UIButton {

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class ButterPickerHandler: NSObject, EditorDelegate {
+class ToolPickerHandler: NSObject, EditorDelegate {
     private enum Item: String {
         case Tablespoons, Cups
     }
@@ -15,11 +15,12 @@ class ButterPickerHandler: NSObject, EditorDelegate {
 
     let datasource = [Item.Tablespoons.rawValue, Item.Cups.rawValue]
 
-    var editor: ElementEditor?
-    init(editor: ElementEditor) {
+    var editor: EditorView?
+    init(editor: EditorView) {
         super.init()
         self.editor = editor
         editor.delegate = self
+        editor.setDatasource(datasource: datasource)
     }
 
     var min: Double = 0

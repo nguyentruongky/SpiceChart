@@ -14,11 +14,12 @@ class UnitPickerHandler: NSObject, EditorDelegate {
     }
     let datasource = [Item.Grams.rawValue, Item.Ounces.rawValue]
 
-    var editor: ElementEditor?
-    init(editor: ElementEditor) {
+    var editor: EditorView?
+    init(editor: EditorView) {
         super.init()
         self.editor = editor
         editor.delegate = self
+        editor.setDatasource(datasource: datasource)
     }
 
     var min: Double = 0

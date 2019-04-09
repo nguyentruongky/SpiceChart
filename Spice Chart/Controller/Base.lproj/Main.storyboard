@@ -78,6 +78,9 @@
                                                                     <constraint firstItem="vDF-iA-X9K" firstAttribute="centerX" secondItem="3Sk-FO-T2u" secondAttribute="centerX" id="B4B-WP-Nxg"/>
                                                                     <constraint firstItem="vDF-iA-X9K" firstAttribute="centerY" secondItem="3Sk-FO-T2u" secondAttribute="centerY" id="e2f-S5-JpZ"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="BUTTER OIL"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xp-EP-0TU" userLabel="Coconut" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
                                                                 <rect key="frame" x="179.5" y="0.0" width="163.5" height="64"/>
@@ -94,6 +97,9 @@
                                                                     <constraint firstItem="mCh-Jz-C6g" firstAttribute="centerX" secondItem="8xp-EP-0TU" secondAttribute="centerX" id="DcY-Rk-cYq"/>
                                                                     <constraint firstItem="mCh-Jz-C6g" firstAttribute="centerY" secondItem="8xp-EP-0TU" secondAttribute="centerY" id="eLY-Hp-KuB"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="COCONUT OIL"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -115,6 +121,9 @@
                                                                     <constraint firstItem="XfF-d7-sOv" firstAttribute="centerY" secondItem="D00-0k-gkA" secondAttribute="centerY" id="CSc-MP-idj"/>
                                                                     <constraint firstItem="XfF-d7-sOv" firstAttribute="centerX" secondItem="D00-0k-gkA" secondAttribute="centerX" id="iza-a0-N9I"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="EXTRA VIRGIN OLIVE OIL"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YD3-EE-mw8" userLabel="Avocado" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
                                                                 <rect key="frame" x="179.5" y="0.0" width="163.5" height="64"/>
@@ -131,6 +140,9 @@
                                                                     <constraint firstItem="wPE-pP-zym" firstAttribute="centerY" secondItem="YD3-EE-mw8" secondAttribute="centerY" id="YWw-B7-3nR"/>
                                                                     <constraint firstItem="wPE-pP-zym" firstAttribute="centerX" secondItem="YD3-EE-mw8" secondAttribute="centerX" id="bOj-qY-TDV"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="AVOCADO OIL"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -152,6 +164,9 @@
                                                                     <constraint firstItem="xDh-XU-sdx" firstAttribute="centerX" secondItem="e2t-ma-N5c" secondAttribute="centerX" id="41f-5Y-B1f"/>
                                                                     <constraint firstItem="xDh-XU-sdx" firstAttribute="centerY" secondItem="e2t-ma-N5c" secondAttribute="centerY" id="7CK-Kk-qSi"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="WALNUT OIL"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTw-Kp-VwR" userLabel="Grapeseed" customClass="DetailView" customModule="Spice_Chart" customModuleProvider="target">
                                                                 <rect key="frame" x="179.5" y="0.0" width="163.5" height="64"/>
@@ -168,6 +183,9 @@
                                                                     <constraint firstItem="0TR-hM-vWq" firstAttribute="centerX" secondItem="kTw-Kp-VwR" secondAttribute="centerX" id="oGM-vQ-rt8"/>
                                                                     <constraint firstItem="0TR-hM-vWq" firstAttribute="centerY" secondItem="kTw-Kp-VwR" secondAttribute="centerY" id="pMG-j4-ArP"/>
                                                                 </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="name" value="GRAPESEED OIL"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -179,7 +197,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-YZ-s8N" userLabel="Element">
                                                 <rect key="frame" x="16" y="404" width="343" height="400"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-JA-TUH" userLabel="Butter Picker" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-JA-TUH" userLabel="Butter Picker" customClass="EditorView" customModule="Spice_Chart" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Butter picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f28-U4-DIx">
@@ -195,7 +213,7 @@
                                                             <constraint firstItem="f28-U4-DIx" firstAttribute="centerX" secondItem="Btb-JA-TUH" secondAttribute="centerX" id="e3H-Wj-YSZ"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO4-c1-BZb" userLabel="Spices Picker" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GO4-c1-BZb" userLabel="Spices Picker" customClass="EditorView" customModule="Spice_Chart" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="104" width="343" height="88"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spices Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpW-1i-GkA">
@@ -211,7 +229,7 @@
                                                             <constraint firstItem="IpW-1i-GkA" firstAttribute="centerY" secondItem="GO4-c1-BZb" secondAttribute="centerY" id="Rn2-Zy-cJ4"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-fy-Sb7" userLabel="Spices Percent" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJe-fy-Sb7" userLabel="Spices Percent" customClass="EditorView" customModule="Spice_Chart" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="208" width="343" height="88"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spices Percent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-K3-uoo">
@@ -227,7 +245,7 @@
                                                             <constraint firstItem="cMN-K3-uoo" firstAttribute="centerX" secondItem="cJe-fy-Sb7" secondAttribute="centerX" id="fWh-1a-uOf"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-zK-sQa" userLabel="Number Of Serving" customClass="ElementEditor" customModule="Spice_Chart" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-zK-sQa" userLabel="Number Of Serving" customClass="EditorView" customModule="Spice_Chart" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="312" width="343" height="88"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of serving" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-5b-MPd">
@@ -285,15 +303,15 @@
                     <size key="freeformSize" width="375" height="1200"/>
                     <connections>
                         <outlet property="avocadoView" destination="YD3-EE-mw8" id="vfn-aP-99Z"/>
-                        <outlet property="butterPicker" destination="Btb-JA-TUH" id="5Z3-lV-z4q"/>
                         <outlet property="butterView" destination="3Sk-FO-T2u" id="ST0-hj-1rP"/>
                         <outlet property="coconutView" destination="8xp-EP-0TU" id="HZs-eH-ndJ"/>
                         <outlet property="grapeseedView" destination="kTw-Kp-VwR" id="k6p-du-YLA"/>
-                        <outlet property="numberOfServing" destination="BWm-zK-sQa" id="jR1-EC-NU4"/>
                         <outlet property="oliveView" destination="D00-0k-gkA" id="R9Y-3c-1Ya"/>
-                        <outlet property="spicesPercent" destination="cJe-fy-Sb7" id="6u3-fc-PFj"/>
-                        <outlet property="spicesPicker" destination="GO4-c1-BZb" id="Cuc-XB-tTq"/>
-                        <outlet property="walnetView" destination="e2t-ma-N5c" id="dFP-23-VsA"/>
+                        <outlet property="percentPickerView" destination="cJe-fy-Sb7" id="6u3-fc-PFj"/>
+                        <outlet property="servingAmountView" destination="BWm-zK-sQa" id="WGu-d8-XYJ"/>
+                        <outlet property="toolPickerView" destination="Btb-JA-TUH" id="6cG-7o-ud1"/>
+                        <outlet property="unitPickerView" destination="GO4-c1-BZb" id="OSN-Ag-8TN"/>
+                        <outlet property="walnutView" destination="e2t-ma-N5c" id="zAc-69-gVT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SpicesPercentageHandler: NSObject, EditorDelegate {
-    var editor: ElementEditor?
-    init(editor: ElementEditor) {
+class PercentPickerHandler: NSObject, EditorDelegate {
+    var editor: EditorView?
+    init(editor: EditorView) {
         super.init()
         self.editor = editor
         editor.delegate = self
@@ -18,7 +18,7 @@ class SpicesPercentageHandler: NSObject, EditorDelegate {
 
     var min: Double = 0
     var max: Double = 100
-    var step: Double = 1
+    var step: Double = 0.1
 
     func didSelectItem(item: String, atIndex: Int) { }
 

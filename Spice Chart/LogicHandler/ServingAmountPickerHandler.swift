@@ -8,9 +8,9 @@
 
 import Foundation
 
-class ServingNumberHandler: NSObject, EditorDelegate {
-    var editor: ElementEditor?
-    init(editor: ElementEditor) {
+class ServingAmountPickerHandler: NSObject, EditorDelegate {
+    var editor: EditorView?
+    init(editor: EditorView) {
         super.init()
         self.editor = editor
         editor.delegate = self

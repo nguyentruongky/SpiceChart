@@ -13,50 +13,50 @@ class ViewController: UIViewController {
     @IBOutlet weak var coconutView: DetailView!
     @IBOutlet weak var oliveView: DetailView!
     @IBOutlet weak var avocadoView: DetailView!
-    @IBOutlet weak var walnetView: DetailView!
+    @IBOutlet weak var walnutView: DetailView!
     @IBOutlet weak var grapeseedView: DetailView!
 
-    @IBOutlet weak var butterPicker: ElementEditor!
-    @IBOutlet weak var spicesPicker: ElementEditor!
-    @IBOutlet weak var spicesPercent: ElementEditor!
-    @IBOutlet weak var numberOfServing: ElementEditor!
+    @IBOutlet weak var toolPickerView: EditorView!
+    @IBOutlet weak var unitPickerView: EditorView!
+    @IBOutlet weak var percentPickerView: EditorView!
+    @IBOutlet weak var servingAmountView: EditorView!
 
-    var butterCalculator: ButterCalculator!
+    var calculator: Calculator!
 
-    var butterHandler: ButterPickerHandler!
-    var unitHandler: UnitPickerHandler!
-    var spicesPercentHandler: SpicesPercentageHandler!
-    var servingNumberHandler: ServingNumberHandler!
+    var toolPicker: ToolPickerHandler!
+    var unitPicker: UnitPickerHandler!
+    var percentPicker: PercentPickerHandler!
+    var servingAmountPicker: ServingAmountPickerHandler!
 
     func setupView() {
-        butterCalculator = ButterCalculator(cupView: butterPicker,
-                                            gramView: spicesPicker,
-                                            percentView: spicesPercent,
-                                            numberServingView: numberOfServing)
+        calculator = Calculator(toolView: toolPickerView,
+                                unitView: unitPickerView,
+                                percentView: percentPickerView,
+                                servingAmountView: servingAmountView)
 
-        butterHandler = ButterPickerHandler(editor: butterPicker)
-        unitHandler = UnitPickerHandler(editor: spicesPicker)
-        spicesPercentHandler = SpicesPercentageHandler(editor: spicesPercent)
-        servingNumberHandler = ServingNumberHandler(editor: numberOfServing)
+        toolPicker = ToolPickerHandler(editor: toolPickerView)
+        unitPicker = UnitPickerHandler(editor: unitPickerView)
+        percentPicker = PercentPickerHandler(editor: percentPickerView)
+        servingAmountPicker = ServingAmountPickerHandler(editor: servingAmountView)
 
         butterView.setTitle(name: "BUTTER")
         oliveView.setTitle(name: "EXTRA VIRGIN OLIVE OIL")
         coconutView.setTitle(name: "COCONUT OIL")
-        walnetView.setTitle(name: "WALNUT OIL")
+        walnutView.setTitle(name: "WALNUT OIL")
         grapeseedView.setTitle(name: "GRAPESEED OIL")
         avocadoView.setTitle(name: "AVOCADO OIL")
 
-        butterPicker.setTitle(name: "of butter/oil", type: .selection)
-        butterPicker.setDatasource(datasource: butterHandler.datasource)
+        toolPickerView.setTitle(name: "of butter/oil", type: .selection)
+//        butterPicker.setDatasource(datasource: toolPicker.datasource)
 
-        spicesPicker.setTitle(name: "of spices", type: .selection)
-        spicesPicker.setDatasource(datasource: unitHandler.datasource)
+        unitPickerView.setTitle(name: "of spices", type: .selection)
+//        spicesPicker.setDatasource(datasource: unitPicker.datasource)
 
-        spicesPercent.setTitle(name: "% of spices", type: .text)
-        spicesPercent.setDefaultValue()
+        percentPickerView.setTitle(name: "% of spices", type: .text)
+        percentPickerView.setDefaultValue()
 
-        numberOfServing.setTitle(name: "# of servings", type: .text)
-        numberOfServing.setDefaultValue()
+        servingAmountView.setTitle(name: "# of servings", type: .text)
+        servingAmountView.setDefaultValue()
     }
 
     var butterPickerDatasource = ["Tablespoons", "Cups"]
@@ -70,7 +70,33 @@ class ViewController: UIViewController {
     }
 
     @objc func valueChange(value: Double) {
-        butterView.totalValueLabel.text = butterCalculator.getTotal()
-        butterView.servingValueLabel.text = butterCalculator.getMgServing()
+        calculateValues(ingredient: .butter)
+        calculateValues(ingredient: .coconut)
+        calculateValues(ingredient: .avocado)
+        calculateValues(ingredient: .olive)
+        calculateValues(ingredient: .walnut)
+        calculateValues(ingredient: .grapeseed)
+    }
+
+    func calculateValues(ingredient: IngredientType) {
+        let value = calculator.calculateFigure(ingredientType: ingredient)
+        let detailView: DetailView
+        switch ingredient {
+        case .butter:
+            detailView = butterView
+        case .avocado:
+            detailView = avocadoView
+        case .coconut:
+            detailView = coconutView
+        case .olive:
+            detailView = oliveView
+        case .walnut:
+            detailView = walnutView
+        case .grapeseed:
+            detailView = grapeseedView
+        }
+        detailView.totalValueLabel.text = value.total.formatNumber()
+        detailView.servingValueLabel.text = String(value.mgServing)
     }
 }
+

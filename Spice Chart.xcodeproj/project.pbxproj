@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262D72C52255E9CC00AF0EF9 /* ButterCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D72C42255E9CC00AF0EF9 /* ButterCalculator.swift */; };
+		262D72C52255E9CC00AF0EF9 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D72C42255E9CC00AF0EF9 /* Calculator.swift */; };
 		266AC5532252035300FCEE5A /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 266AC5522252035300FCEE5A /* DetailView.xib */; };
 		266AC555225203D200FCEE5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC554225203D200FCEE5A /* DetailView.swift */; };
 		266AC55B2252189D00FCEE5A /* knConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC55A2252189D00FCEE5A /* knConstraints.swift */; };
 		266AC55D22521CA700FCEE5A /* PickerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC55C22521CA700FCEE5A /* PickerWrapper.swift */; };
-		266AC55F2252B71700FCEE5A /* ButterPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC55E2252B71700FCEE5A /* ButterPickerHandler.swift */; };
+		266AC55F2252B71700FCEE5A /* ToolPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC55E2252B71700FCEE5A /* ToolPickerHandler.swift */; };
 		266AC5612252BBB200FCEE5A /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5602252BBB200FCEE5A /* Support.swift */; };
 		266AC5672252C0EC00FCEE5A /* UnitPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5662252C0EC00FCEE5A /* UnitPickerHandler.swift */; };
-		266AC5692252F43400FCEE5A /* SpicesPercentageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5682252F43400FCEE5A /* SpicesPercentageHandler.swift */; };
-		266AC56B2252F48B00FCEE5A /* ServingNumberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC56A2252F48B00FCEE5A /* ServingNumberHandler.swift */; };
+		266AC5692252F43400FCEE5A /* PercentPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC5682252F43400FCEE5A /* PercentPickerHandler.swift */; };
+		266AC56B2252F48B00FCEE5A /* ServingAmountPickerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AC56A2252F48B00FCEE5A /* ServingAmountPickerHandler.swift */; };
 		415325452251243700D195F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415325442251243700D195F2 /* AppDelegate.swift */; };
 		415325472251243700D195F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415325462251243700D195F2 /* ViewController.swift */; };
 		4153254A2251243700D195F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415325482251243700D195F2 /* Main.storyboard */; };
@@ -24,8 +24,8 @@
 		4153254F2251243A00D195F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4153254D2251243A00D195F2 /* LaunchScreen.storyboard */; };
 		4153255A2251243A00D195F2 /* Spice_ChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415325592251243A00D195F2 /* Spice_ChartTests.swift */; };
 		415325652251243B00D195F2 /* Spice_ChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415325642251243B00D195F2 /* Spice_ChartUITests.swift */; };
-		4153257322513B6500D195F2 /* ElementEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153257222513B6500D195F2 /* ElementEditor.swift */; };
-		4153257522513B9000D195F2 /* ElementEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4153257422513B9000D195F2 /* ElementEditor.xib */; };
+		4153257322513B6500D195F2 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153257222513B6500D195F2 /* EditorView.swift */; };
+		4153257522513B9000D195F2 /* EditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4153257422513B9000D195F2 /* EditorView.xib */; };
 		41532577225153E000D195F2 /* Logic in Resources */ = {isa = PBXBuildFile; fileRef = 41532576225153E000D195F2 /* Logic */; };
 /* End PBXBuildFile section */
 
@@ -47,16 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		262D72C42255E9CC00AF0EF9 /* ButterCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterCalculator.swift; sourceTree = "<group>"; };
+		262D72C42255E9CC00AF0EF9 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		266AC5522252035300FCEE5A /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		266AC554225203D200FCEE5A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		266AC55A2252189D00FCEE5A /* knConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = knConstraints.swift; sourceTree = "<group>"; };
 		266AC55C22521CA700FCEE5A /* PickerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerWrapper.swift; sourceTree = "<group>"; };
-		266AC55E2252B71700FCEE5A /* ButterPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterPickerHandler.swift; sourceTree = "<group>"; };
+		266AC55E2252B71700FCEE5A /* ToolPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPickerHandler.swift; sourceTree = "<group>"; };
 		266AC5602252BBB200FCEE5A /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		266AC5662252C0EC00FCEE5A /* UnitPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitPickerHandler.swift; sourceTree = "<group>"; };
-		266AC5682252F43400FCEE5A /* SpicesPercentageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicesPercentageHandler.swift; sourceTree = "<group>"; };
-		266AC56A2252F48B00FCEE5A /* ServingNumberHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServingNumberHandler.swift; sourceTree = "<group>"; };
+		266AC5682252F43400FCEE5A /* PercentPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentPickerHandler.swift; sourceTree = "<group>"; };
+		266AC56A2252F48B00FCEE5A /* ServingAmountPickerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServingAmountPickerHandler.swift; sourceTree = "<group>"; };
 		415325412251243700D195F2 /* Spice Chart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spice Chart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415325442251243700D195F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415325462251243700D195F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		415325602251243B00D195F2 /* Spice ChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spice ChartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415325642251243B00D195F2 /* Spice_ChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spice_ChartUITests.swift; sourceTree = "<group>"; };
 		415325662251243B00D195F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4153257222513B6500D195F2 /* ElementEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementEditor.swift; sourceTree = "<group>"; };
-		4153257422513B9000D195F2 /* ElementEditor.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementEditor.xib; sourceTree = "<group>"; };
+		4153257222513B6500D195F2 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		4153257422513B9000D195F2 /* EditorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditorView.xib; sourceTree = "<group>"; };
 		41532576225153E000D195F2 /* Logic */ = {isa = PBXFileReference; lastKnownFileType = text; path = Logic; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,7 @@
 		262D72C32255E9BF00AF0EF9 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				262D72C42255E9CC00AF0EF9 /* ButterCalculator.swift */,
+				262D72C42255E9CC00AF0EF9 /* Calculator.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -120,8 +120,8 @@
 		266AC5572252109700FCEE5A /* ElementEditor */ = {
 			isa = PBXGroup;
 			children = (
-				4153257222513B6500D195F2 /* ElementEditor.swift */,
-				4153257422513B9000D195F2 /* ElementEditor.xib */,
+				4153257222513B6500D195F2 /* EditorView.swift */,
+				4153257422513B9000D195F2 /* EditorView.xib */,
 			);
 			path = ElementEditor;
 			sourceTree = "<group>";
@@ -152,10 +152,10 @@
 		266AC5642252C0CF00FCEE5A /* LogicHandler */ = {
 			isa = PBXGroup;
 			children = (
-				266AC55E2252B71700FCEE5A /* ButterPickerHandler.swift */,
+				266AC55E2252B71700FCEE5A /* ToolPickerHandler.swift */,
 				266AC5662252C0EC00FCEE5A /* UnitPickerHandler.swift */,
-				266AC5682252F43400FCEE5A /* SpicesPercentageHandler.swift */,
-				266AC56A2252F48B00FCEE5A /* ServingNumberHandler.swift */,
+				266AC5682252F43400FCEE5A /* PercentPickerHandler.swift */,
+				266AC56A2252F48B00FCEE5A /* ServingAmountPickerHandler.swift */,
 			);
 			path = LogicHandler;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 				4153254C2251243A00D195F2 /* Assets.xcassets in Resources */,
 				266AC5532252035300FCEE5A /* DetailView.xib in Resources */,
 				4153254A2251243700D195F2 /* Main.storyboard in Resources */,
-				4153257522513B9000D195F2 /* ElementEditor.xib in Resources */,
+				4153257522513B9000D195F2 /* EditorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,18 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266AC56B2252F48B00FCEE5A /* ServingNumberHandler.swift in Sources */,
+				266AC56B2252F48B00FCEE5A /* ServingAmountPickerHandler.swift in Sources */,
 				266AC55B2252189D00FCEE5A /* knConstraints.swift in Sources */,
-				266AC55F2252B71700FCEE5A /* ButterPickerHandler.swift in Sources */,
+				266AC55F2252B71700FCEE5A /* ToolPickerHandler.swift in Sources */,
 				266AC5672252C0EC00FCEE5A /* UnitPickerHandler.swift in Sources */,
-				4153257322513B6500D195F2 /* ElementEditor.swift in Sources */,
-				262D72C52255E9CC00AF0EF9 /* ButterCalculator.swift in Sources */,
+				4153257322513B6500D195F2 /* EditorView.swift in Sources */,
+				262D72C52255E9CC00AF0EF9 /* Calculator.swift in Sources */,
 				415325472251243700D195F2 /* ViewController.swift in Sources */,
 				266AC55D22521CA700FCEE5A /* PickerWrapper.swift in Sources */,
 				266AC5612252BBB200FCEE5A /* Support.swift in Sources */,
 				415325452251243700D195F2 /* AppDelegate.swift in Sources */,
 				266AC555225203D200FCEE5A /* DetailView.swift in Sources */,
-				266AC5692252F43400FCEE5A /* SpicesPercentageHandler.swift in Sources */,
+				266AC5692252F43400FCEE5A /* PercentPickerHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
