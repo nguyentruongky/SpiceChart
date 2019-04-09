@@ -96,7 +96,7 @@ class ViewController: UIViewController {
             detailView = grapeseedView
         }
         detailView.totalValueLabel.text = value.total.formatNumber()
-        detailView.servingValueLabel.text = String(value.mgServing)
+        detailView.servingValueLabel.text = value.mgServing.formatNumber()
     }
 }
 
